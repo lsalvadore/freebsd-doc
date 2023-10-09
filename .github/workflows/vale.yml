@@ -1,0 +1,17 @@
+name: reviewdog
+on:
+  pull_request:
+    types: opened
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jitterbit/get-changed-files@v1
+        with:
+          format: "json"
+      - uses: errata-ai/vale-action@reviewdog
+        with:
+          reporter: github-pr-review
+          files: ${{ steps.files.outputs.added_modified }}
