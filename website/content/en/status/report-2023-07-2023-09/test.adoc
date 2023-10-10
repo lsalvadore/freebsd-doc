@@ -1,0 +1,3 @@
+This  is test text.
+It doesn't contain anything useful.
+Except a few things that vale should detect.    
