@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: jitterbit/get-changed-files@v1
-          with:
-            format: "json"
+        #          with:
+        #   format: "json"
       - uses: errata-ai/vale-action@reviewdog
-          with:
-            files: ${{ steps.files.outputs.added_modified }}
+        # with:
+        #   files: ${{ steps.files.outputs.added_modified }}
