@@ -61,8 +61,8 @@ cat >&3 <<EOF
 # Relnotes:	<Set to 'yes' for mention in release notes.>
 # Security:	<Vulnerability reference (one per line) or description.>
 # Sponsored by:	<If the change was sponsored by an organization.>
-# Pull Request:	<https://github.com/freebsd/freebsd-doc/pull/###>
-# Differential Revision:	<https://reviews.freebsd.org/D###>
+# Pull Request:	https://github.com/freebsd/freebsd-doc/pull/
+# Differential Revision:	https://reviews.freebsd.org/D
 #
 # "Pull Request" and "Differential Revision" require the *full* GitHub or
 # Phabricator URL.
