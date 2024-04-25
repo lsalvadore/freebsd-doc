@@ -65,54 +65,52 @@ Categories = [
 
 Category.new("FreeBSD-Team-Reports","FreeBSD Team Reports",
 <<EOT,TeamReports_FILES.split),
-Entries from the various official and semi-official teams, as found in the link:../../administration/[Administration Page].
+{FreeBSD-Team-Reports-desc}
 EOT
 
 Category.new("projects","Projects",
 <<EOT,Projects_FILES.split),
-Projects that span multiple categories, from the kernel and userspace to the Ports Collection or external projects.
+{projects-desc}
 EOT
 
 Category.new("userland","Userland",
 <<EOT,Userland_FILES.split),
-Changes affecting the base system and programs in it.
+{userland-desc}
 EOT
 
 Category.new("kernel","Kernel",
 <<EOT,Kernel_FILES.split),
-Updates to kernel subsystems/features, driver support, filesystems, and more.
+{kernel-desc}
 EOT
 
 Category.new("architectures","Architectures",
 <<EOT,Architectures_FILES.split),
-Updating platform-specific features and bringing in support for the new hardware platform.
+{architectures-desc}
 EOT
 
 Category.new("cloud","Cloud",
 <<EOT,Cloud_FILES.split),
-Updating cloud-specific features and bringing in support for new cloud platforms.
+{cloud-desc}
 EOT
 
 Category.new("documentation","Documentation",
 <<EOT,Documentation_FILES.split),
-Noteworthy changes in the documentation tree, manual pages, or new external books/documents.
+{documentation-desc}
 EOT
 
 Category.new("ports","Ports",
 <<EOT,Ports_FILES.split),
-Changes affecting the Ports Collection, whether sweeping changes that touch most of the tree, or individual ports themselves.
+{ports-desc}
 EOT
 
 Category.new("third-Party-Projects","Third Party Projects",
 <<EOT,ThirdParty_FILES.split),
-Many projects build upon FreeBSD or incorporate components of FreeBSD into their project.
-As these projects may be of interest to the broader FreeBSD community, we sometimes include brief updates submitted by these projects in our quarterly report.
-The FreeBSD project makes no representation as to the accuracy or veracity of any claims in these submissions.
+{third-Party-Projects-desc}
 EOT
 
 Category.new("miscellaneous","Miscellaneous",
 <<EOT,Miscellaneous_FILES.split)
-Objects that defy categorization.
+{miscellaneous-desc}
 EOT
 
     ]
@@ -136,6 +134,8 @@ sidenav: about
 :source-highlighter: rouge
 :experimental:
 :reports-path: content/en/status/report-#{YEAR}-#{sprintf("%02d",START)}-#{YEAR}-#{sprintf("%02d",STOP)}
+
+include::content/en/status/categories-desc.adoc[]
 
 include::{reports-path}/intro.adoc[]
 
