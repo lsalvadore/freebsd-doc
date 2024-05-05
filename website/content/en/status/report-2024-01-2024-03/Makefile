@@ -1,7 +1,7 @@
 # Report month start
-START?=	01
+START?=	1
 # Report month end
-STOP?=	03
+STOP?=	3
 # Report year
 YEAR?=	2024
 # Report quarter
